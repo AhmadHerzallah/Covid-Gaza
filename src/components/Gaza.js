@@ -17,13 +17,12 @@ export default function Gaza() {
     const items = await data.json();
     console.log(items.infecterByRegion[12].region);
     setItems(items);
+    console.log(items.infecterByRegion[12].region);
   };
   return (
     <div className="container">
       <h1>Here you can find all the data about Gaza Covid-19 Data</h1>
-      <div>
-        <h1>{items.infecterByRegion[12].region}</h1>
-      </div>
+      <div>{/* <h1>{items.infecterByRegion[12].region}</h1> */}</div>
     </div>
   );
 }
