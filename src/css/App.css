@@ -1,5 +1,7 @@
 .active {
-  color: #845 !important;
+  /* color: #845 !important; */
+  transition: 0.2s all ease-in-out;
+  border-bottom: 25px solid #000;
 }
 .nav {
 }
