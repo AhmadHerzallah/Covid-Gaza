@@ -15,14 +15,17 @@ export default function Gaza() {
   const fetchItems = async () => {
     const data = await fetch(url);
     const items = await data.json();
-    console.log(items.infecterByRegion[12].region);
     setItems(items);
-    console.log(items.infecterByRegion[12].region);
+    console.log(`Region: ${items.infecterByRegion[12].region}`);
+    console.log(`Infected: ${items.infecterByRegion[12].infected}`);
+    console.log(`Active: ${items.infecterByRegion[12].active}`);
   };
+
   return (
     <div className="container">
-      <h1>Here you can find all the data about Gaza Covid-19 Data</h1>
-      <div>{/* <h1>{items.infecterByRegion[12].region}</h1> */}</div>
+      <p className="text-center">
+        Here you can find all the data about Gaza Covid-19 Data
+      </p>
     </div>
   );
 }
