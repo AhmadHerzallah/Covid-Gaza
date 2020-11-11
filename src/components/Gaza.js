@@ -1,5 +1,4 @@
 import { React, useEffect, useState } from 'react';
-import axios from 'axios';
 export default function Gaza() {
   const url =
     'https://api.apify.com/v2/key-value-stores/SbribCOVf2wgR868y/records/LATEST?disableRedirect=true';
