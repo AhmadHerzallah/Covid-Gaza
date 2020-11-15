@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div className="nav navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="nav navbar navbar-expand-lg navbar-dark bg-dark, header">
           <ul>
             <li className="navbar-brand">
               <NavLink exact to="/">
